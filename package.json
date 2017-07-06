@@ -1,0 +1,33 @@
+{
+  "name": "ual-libchat",
+  "version": "1.0.0",
+  "description": "University of Arizona Libraries LibChat Customizations",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ualibraries/ual-libchat.git"
+  },
+  "author": "Christopher Green",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ualibraries/ual-libchat/issues"
+  },
+  "homepage": "https://github.com/ualibraries/ual-libchat#readme",
+  "engines": {
+    "node": "v6.11.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "postcss-cssnext": "^3.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-reporter": "^4.0.0",
+    "shipit-cli": "^3.0.0",
+    "shipit-deploy": "^2.5.1",
+    "stylelint": "^7.12.0",
+    "yargs": "^8.0.2"
+  }
+}
