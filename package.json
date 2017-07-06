@@ -4,6 +4,7 @@
   "description": "University of Arizona Libraries LibChat Customizations",
   "main": "gulpfile.js",
   "scripts": {
+    "serve": "node ./static-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +21,12 @@
     "node": "v6.11.0"
   },
   "dependencies": {
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
     "gulp-postcss": "^7.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "localtunnel": "^1.8.3",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^4.0.0",
