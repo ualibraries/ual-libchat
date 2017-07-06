@@ -4,7 +4,11 @@
   "description": "University of Arizona Libraries LibChat Customizations",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "node_modules/stylelint/bin/stylelint.js \"src/*.css\""
+    "build": "gulp css",
+    "deploy:dev": "shipit dev deploy",
+    "deploy:prod": "shipit prod deploy",
+    "test": "stylelint \"src/*.css\"",
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
