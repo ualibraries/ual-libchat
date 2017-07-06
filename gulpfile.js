@@ -5,7 +5,7 @@ const gulp = require('gulp')
 const sourcemaps = require('gulp-sourcemaps')
 
 gulp.task('css', () => {
-  return gulp.src('./src/*.css')
+  return gulp.src('./src/ual-libchat.css')
     .pipe(sourcemaps.init())
     .pipe(postcss())
     .pipe(sourcemaps.write('.'))

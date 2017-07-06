@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"ual-libchat.css","sourcesContent":[]}
+{"version":3,"sources":["ual-libchat.css"],"names":[],"mappings":"AAEA,KACE,mCAAiD,AACjD,eAAmC,AACnC,aAAyB,CAC1B","file":"ual-libchat.css","sourcesContent":["@import \"_properties.css\";\n\nbody {\n  background-color: var(--neutral-tone) !important;\n  font-size: var(--font-size-normal);\n  color: var(--body-color);\n}\n"]}

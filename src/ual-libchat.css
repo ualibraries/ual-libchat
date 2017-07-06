@@ -1,2 +1,7 @@
+@import "_properties.css";
+
 body {
+  background-color: var(--neutral-tone) !important;
+  font-size: var(--font-size-normal);
+  color: var(--body-color);
 }
