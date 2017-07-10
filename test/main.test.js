@@ -16,3 +16,17 @@ describe('Custom stylesheet', function () {
     )
   })
 })
+
+describe('Their stylesheet', function () {
+  it('should be this version', function () {
+    return loadDocument().then(
+      function (dom) {
+        let theirActualCSSURL = dom.window.document.querySelectorAll('head link')[1].href
+        expect(theirActualCSSURL).to.be.equal(config.theirCSSURL)
+      },
+      function (err) {
+        console.error(err)
+      }
+    )
+  })
+})
