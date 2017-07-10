@@ -1,5 +1,9 @@
 # University of Arizona Libraries LibChat Customizations
 
+[![Build Status](https://travis-ci.org/ualibraries/ual-libchat.svg?branch=master)](https://travis-ci.org/ualibraries/ual-libchat)
+[![Dependencies](https://david-dm.org/ualibraries/ual-libchat.svg)](https://david-dm.org/ualibraries/ual-libchat)
+
+
 ## Getting started
 
 Install the dependencies: `npm install`
