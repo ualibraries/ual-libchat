@@ -1,22 +1,18 @@
-const test = require('ava')
-const jsdom = require('jsdom')
-const {JSDOM} = jsdom
-const url = 'https://v2.libanswers.com/chati.php?hash=e7fa5c4fdcde97a650b8acc74bb1fc9d'
+const assert = require('assert')
+const expect = require('chai').expect
+const config = require('./config.js')
+const loadDocument = require('./loadDocument.js').loadDocument
 
-test('Check custom CSS', async t => {
-  let config = {
-    resources: 'usable',
-    runScripts: 'dangerously'
-  }
-
-  let loaded = false
-  let source = await JSDOM.fromURL(url, config).then(dom => {
-    return dom.window.document.documentElement
+describe('Custom stylesheet', function () {
+  it('needs to load', function () {
+    return loadDocument().then(
+      function (dom) {
+        let customStylesheetImport = dom.window.document.querySelectorAll('head style')[2].innerHTML
+        expect(customStylesheetImport).to.be.equal(config.stylesheetImport)
+      },
+      function (err) {
+        console.error(err)
+      }
+    )
   })
-
-  let styleTags = source.querySelectorAll('head style')
-
-  console.log(source.innerHTML)
-
-  t.pass(`Our custom CSS was loaded`)
 })

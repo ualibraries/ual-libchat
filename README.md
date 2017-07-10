@@ -32,3 +32,5 @@ You will the be provided with a css import at-rule to paste into LibChat widget 
 * [PostCSS](http://postcss.org/) and [PostCSS-cssnext](http://cssnext.io/)
 * [Shipit](https://github.com/shipitjs/shipit)
 * [Travis CI](https://travis-ci.org/)
+* [Mocha](http://mochajs.org/)
+* [Chai](http://chaijs.com/)
