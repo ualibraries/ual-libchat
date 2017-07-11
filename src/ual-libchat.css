@@ -1,7 +1,7 @@
 @import "_properties.css";
-
-body {
-  background-color: var(--neutral-tone) !important;
-  font-size: var(--font-size-normal);
-  color: var(--body-color);
-}
+@import "_global.css";
+@import "_header.css";
+@import "_thread.css";
+@import "_message-form.css";
+@import "_buttons.css";
+@import "_upload-file.css";

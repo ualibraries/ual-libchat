@@ -1,0 +1,21 @@
+#s-lch-msg-log {
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+}
+
+.s-lch-msg-sys .s-lch-msg-txt {
+  border-top: none !important;
+  border-bottom: none !important;
+  background-color: var(--robot-yellow);
+  color: var(--body-color);
+}
+
+.s-lch-msg-patron .s-lch-msg-body {
+  padding: 10px !important;
+  background-color: var(--gray) !important;
+  color: var(--body-color) !important;
+}
+
+.s-lch-msg {
+  margin: 1em !important;
+}

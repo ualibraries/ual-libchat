@@ -1,0 +1,14 @@
+.s-la-widget .btn {
+  border: none !important;
+}
+
+.s-la-widget .btn-default {
+  border: none !important;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.s-la-widget .btn-default:hover {
+  background-color: color(var(--blue) shade(30%));
+  color: var(--white);
+}

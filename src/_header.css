@@ -1,0 +1,21 @@
+.s-lch-pane header.s-lch-pane-header {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.s-lch-pane header h2#s-lch-status {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: 20px;
+  padding: 10px;
+  /*
+  We can't set a background color here anymore because it clashes with the text
+  forground color, which is set as an inline style.
+  */
+  /*background-color: var(--blue) !important;*/
+  color: var(--blue);
+}
+
+.s-la-widget .color_head {
+  color: var(--blue);
+}
