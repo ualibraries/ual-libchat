@@ -31,7 +31,7 @@ Paste the following into the 'Custom CSS' field on the 'LibChat Widget Creator' 
 
 Running `npm run watch` will:
 
-* Start a local static webserver by running `npm run serve`.
+* Start a local static webserver.
 You will the be provided with a css import at-rule to paste into LibChat widget creator.
 * Watch CSS files and process them when they change
 
