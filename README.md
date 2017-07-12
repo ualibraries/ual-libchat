@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/ualibraries/ual-libchat.svg?branch=master)](https://travis-ci.org/ualibraries/ual-libchat)
 [![Dependencies](https://david-dm.org/ualibraries/ual-libchat.svg)](https://david-dm.org/ualibraries/ual-libchat)
 
+![Screenshot](screenshot.png)
 
 ## Getting started
 
