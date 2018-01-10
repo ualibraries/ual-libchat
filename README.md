@@ -20,6 +20,8 @@ like this: `npm run deploy -- --profile=profilename`.
 
 ## LibChat settings
 
+Login to LibChat settings at https://arizona.libapps.com/libapps/.
+
 Paste the following into the 'Custom CSS' field on the 'LibChat Widget Creator' page:
 
 ```css
