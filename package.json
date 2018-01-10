@@ -5,8 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp css",
-    "deploy:dev": "shipit dev deploy",
-    "deploy:prod": "shipit prod deploy",
+    "deploy": "aws s3 sync css s3://ualibr-libchat --delete",
     "test": "stylelint \"src/*.css\" && mocha",
     "serve": "gulp serve",
     "watch": "gulp watch"
@@ -25,23 +24,21 @@
     "node": "v6.11.0"
   },
   "dependencies": {
-    "chai": "^4.0.2",
+    "chai": "^4.1.2",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-postcss": "^7.0.0",
-    "gulp-sourcemaps": "^2.6.0",
-    "jsdom": "^11.1.0",
+    "gulp-connect": "^5.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.3",
+    "jsdom": "^11.5.1",
     "localtunnel": "^1.8.3",
-    "mocha": "^3.4.2",
-    "postcss-cssnext": "^3.0.0",
+    "mocha": "^3.5.3",
+    "postcss-cssnext": "^3.0.2",
     "postcss-import": "^10.0.0",
     "postcss-reporter": "^4.0.0",
-    "request": "^2.81.0",
-    "request-promise-native": "^1.0.4",
-    "shipit-cli": "^3.0.0",
-    "shipit-deploy": "^2.5.1",
-    "stylelint": "^7.12.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "stylelint": "^7.13.0",
     "yargs": "^8.0.2"
   }
 }

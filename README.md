@@ -11,20 +11,19 @@ Install the dependencies: `npm install`
 
 Build the project with `npm run build`
 
-Push your changes to the remote repository, then deploy to production with `npm run deploy:prod`
+## Deploying
 
-You can deploy from the `develop` branch with `npm run deploy:dev`
+The contents of the `css` directory are served from an Amazon S3 bucket named `ualibr-libchat`.
 
-This project uses [Shipit](https://github.com/shipitjs/shipit) for deployments.
-
-By default, Shipit uses your current OS username for connecting to the remote server. To override that, use the `--user` parameter. Example: `shipit prod deploy --user=YOUR_USERNAME`
+You can deploy the project by running `npm run deploy`. You might need to specify an AWS profile
+like this: `npm run deploy -- --profile=profilename`.
 
 ## LibChat settings
 
 Paste the following into the 'Custom CSS' field on the 'LibChat Widget Creator' page:
 
 ```css
-@import url("https://www.library.arizona.edu/vendor-support/libchat/current/css/ual-libchat.css");
+@import url("http://ualibr-libchat.s3-website-us-west-2.amazonaws.com/ual-libchat.css");
 ```
 
 ## Local testing
