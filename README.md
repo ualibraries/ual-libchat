@@ -25,7 +25,7 @@ Login to LibChat settings at https://arizona.libapps.com/libapps/.
 Paste the following into the 'Custom CSS' field on the 'LibChat Widget Creator' page:
 
 ```css
-@import url("http://ualibr-libchat.s3-website-us-west-2.amazonaws.com/ual-libchat.css");
+@import url("https://ualibr-libchat.s3.amazonaws.com/ual-libchat.css");
 ```
 
 ## Local testing
