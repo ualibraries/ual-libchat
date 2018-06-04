@@ -40,5 +40,9 @@
     "request-promise-native": "^1.0.5",
     "stylelint": "^7.13.0",
     "yargs": "^8.0.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
