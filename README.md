@@ -36,6 +36,22 @@ Running `npm run watch` will:
 You will the be provided with a css import at-rule to paste into LibChat widget creator.
 * Watch CSS files and process them when they change
 
+## When the Travis build fails
+
+Travis checks to see if the URL of the LibChat stylesheet has changed. It
+does that by comparing LibChat stylesheet URL to one which is saved in
+`test/config.js`. If the URL are same, the test passes.
+
+If the test doesn't pass, follow these steps.
+
+  1. Go to http://new.library.arizona.edu/chat to see if our custom styles
+     are loading. If everything looks OK,
+  2. Update `theirCSSURL` in `tests/config.js` to match the new LibChat
+     CSS URL.
+
+If the test is failing and our custom styles are not loading, we have
+a problem on our hands.
+
 ## Learn more
 
 * [PostCSS](http://postcss.org/) and [PostCSS-cssnext](http://cssnext.io/)
