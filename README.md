@@ -46,7 +46,7 @@ If the test doesn't pass, follow these steps.
 
   1. Go to http://new.library.arizona.edu/chat to see if our custom styles
      are loading. If everything looks OK,
-  2. Update `theirCSSURL` in `tests/config.js` to match the new LibChat
+  2. Update `theirCSSURL` in `test/config.js` to match the new LibChat
      CSS URL.
 
 If the test is failing and our custom styles are not loading, we have
