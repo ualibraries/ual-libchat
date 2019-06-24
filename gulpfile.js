@@ -33,8 +33,8 @@ gulp.task('serve', () => {
   })
 })
 
-gulp.task('watch', ['serve'], () => {
+gulp.task('watch', gulp.series('serve', () => {
   gulp.watch('./src/**/*.css', ['css'])
-})
+}))
 
-gulp.task('default', ['css'])
+gulp.task('default', gulp.series('css'))
